@@ -1,9 +1,13 @@
 export interface Project {
   title: string;
   description: string;
+  slug?: string;
   tech: string[];
   github?: string;
   demo?: string;
+  videoType?: "local" | "embed";
+  videoUrl?: string;
+  mdPath?: string;
   image?: string;
   featured?: boolean;
 }
@@ -11,10 +15,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     title: "C++ 植物大战僵尸塔防游戏复刻",
+    slug: "pvz-cpp",
     description:
       "基于面向对象设计实现植物、僵尸、子弹等核心实体，搭建固定步长主循环与 AABB 碰撞检测，完整复刻种植、防守、波次生成等塔防玩法，Windows 平台稳定 60 FPS。",
     tech: ["C++", "面向对象设计", "AABB 碰撞检测", "STL"],
     github: "https://github.com/yaoniexs1226/PVZ",
+    videoType: "local",
+    videoUrl: "/videos/pvz-demo.mp4",
+    mdPath: "pvz-cpp",
     featured: true,
   },
   {

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
 const GithubIcon = () => (
@@ -75,6 +76,14 @@ export default function Projects() {
 
                   {/* Links */}
                   <div className="flex gap-3">
+                    {project.slug && (
+                      <Link
+                        href={`/projects/${project.slug}`}
+                        className="flex items-center gap-1.5 text-sm text-indigo-600 dark:text-indigo-400 hover:underline"
+                      >
+                        查看详情
+                      </Link>
+                    )}
                     {project.github && (
                       <a
                         href={project.github}
