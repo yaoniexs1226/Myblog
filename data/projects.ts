@@ -26,6 +26,16 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    title: "OpenCV 实时人脸识别",
+    slug: "opencv-face-recognition",
+    description:
+      "Python + C++ 双轨道 OpenCV 工作区：YuNet 检测人脸、SFace 提取 128 维特征并完成本地人脸库实时匹配，含图像处理入门示例与 CMake/vcpkg C++ 工程。",
+    tech: ["Python", "OpenCV", "YuNet", "SFace", "ONNX", "C++"],
+    github: "https://github.com/yaoniexs1226/opencv-face-recognition",
+    mdPath: "opencv-face-recognition",
+    featured: true,
+  },
+  {
     title: "简易内存池管理器",
     description:
       "设计并实现基于首次适应（First Fit）算法的内存池，模拟操作系统内存分配与回收机制，支持批量内存请求/释放及非法输入处理。",

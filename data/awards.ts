@@ -16,6 +16,14 @@ export const awards: Award[] = [
     description: "在校内大学生数学竞赛中获得一等奖。",
   },
   {
+    title: "三等奖",
+    competition: "蓝桥杯全国软件和信息技术专业人才大赛",
+    date: "2025.04",
+    level: "省级",
+    rank: "A 组 · C++",
+    description: "参加软件类大学 A 组 C/C++ 程序设计，获省级三等奖。",
+  },
+  {
     title: "二等奖",
     competition: "大学生创新创业竞赛",
     date: "2021.12",
